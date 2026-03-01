@@ -1,0 +1,37 @@
+{
+    "name": "chrome-debugger-api",
+    "version": "0.1.0",
+    "description": "Chrome Debugger API wrapper — attach to tabs, execute CDP commands, network inspection, DOM manipulation, and performance profiling for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "debugger",
+        "cdp",
+        "chrome-devtools-protocol",
+        "network",
+        "dom",
+        "manifest-v3",
+        "browser-extension",
+        "profiling"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-debugger-api.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
